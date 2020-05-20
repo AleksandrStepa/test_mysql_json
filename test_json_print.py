@@ -4,7 +4,7 @@ import re
 import pymysql
 from natsort import natsorted
 
-
+# Пост запрос к ресурсу
 try:
     url = r'http://84.201.129.203:4545/get_structure_course'
     results = requests.post(url).json()
