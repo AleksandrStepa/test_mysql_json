@@ -96,9 +96,11 @@ try:
     cur.execute('DROP TABLE IF EXISTS test;')
     cur.execute('''CREATE TABLE test
     (id_module VARCHAR(35) PRIMARY KEY NOT NULL,
-    name_module VARCHAR(120)),
+    name_module VARCHAR(120)
+    ),
     last_edit TIMESTAMP ON UPDATE CURRENT_TIMESTAMP NOT NULL
-    DEFAULT CURRENT_TIMESTAMP;''')
+    DEFAULT CURRENT_TIMESTAMP;'''
+    )
 
     # Запись полученных значений в БД
     # Если надо записать все данные из JSON это еще проще
